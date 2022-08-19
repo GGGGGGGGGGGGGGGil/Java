@@ -19,10 +19,10 @@ public class _07 {
 		int num5 = sc.nextInt();
 		
 		System.out.println(num1 + num2);
-		System.out.println(num1 - num2);
-		System.out.println(num1 * num2);
-		System.out.println(num1 / num2);
-		System.out.println(num1 % num2);
+		System.out.print(num1 - num2);
+		System.out.print(num1 * num2);
+		System.out.print(num1 / num2);
+		System.out.print(num1 % num2);
 	}
 
 }
