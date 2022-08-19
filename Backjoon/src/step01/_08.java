@@ -13,12 +13,10 @@ public class _08 {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		String var1 = sc.next();
+		String var2 = "??!";
 		
-		String A = sc.next();
-		String B = sc.nextLine();
-		
-		System.out.println("A를 출력합니다:"+"joonas");
-		System.out.println("B를 출력합니다:"+"joonas??!");
+		System.out.println(var1 + var2);
 		
 	}
 
