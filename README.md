@@ -13,4 +13,7 @@
  - sub2.조건문 switch 실습하기
  - sub3.반복문 for 실습하기
  - sub4.반복문 while 실습하기
+## Ch04.Java 배열과 메서드
+ - sub1.배열 실습하기
+ - sub2.다차원 배열 실습하기
 # Java
