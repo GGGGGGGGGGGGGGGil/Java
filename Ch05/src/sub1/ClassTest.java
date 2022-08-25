@@ -14,7 +14,7 @@ public class ClassTest {
 	public static void main(String[] args) {
 		
 		//객체 생성
-		Car sonata= new Car();	//참조 변수(객체)
+		Car sonata = new Car();	//참조 변수(객체)
 		
 		//객체 속성 초기화
 		sonata.name = "소나타";
