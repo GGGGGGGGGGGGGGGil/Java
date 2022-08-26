@@ -22,6 +22,23 @@ public class Test01 {
 			System.out.println("\n");
 			
 		}
+		
+		char arr[] = {'J', ' ', 'a', 'v', 'a', ' ', 'E', 'c', 'l', 'i', 'p', 's', 'e'};
+		int var1, var2;
+		
+		for(var1 = 1; var1 <= 12; var1++) {
+			
+			for(var2 = 0; var2 <= var1; var2++) {
+				
+				System.out.print(arr[var2]);
+			}
+			
+			System.out.println("\n");
+		}
+		
+		
+		
+		
 			
 	}
 	

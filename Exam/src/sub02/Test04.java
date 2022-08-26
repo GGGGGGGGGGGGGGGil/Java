@@ -23,7 +23,7 @@ public class Test04 {
 		
 		for (int i=0 ; i<4 ; i++) {
 			
-			for (int j = i+1 ; j<5 ; j++) {
+			for (int j = i+1 ; j<5 ; j++) { //이해x
 				
 				if (arr[i] > arr[j]) {
 					int temp = arr[j];
@@ -37,6 +37,34 @@ public class Test04 {
 		for (int n : arr) {
 			System.out.print(n+" ");
 		}
+		
+		System.out.print(" ");
+		
+		//코드 리뷰
+		
+		int str[] = {4, 2, 1, 5, 3};
+		
+		for(int a = 0; a < 4; a++) {
+			
+			for(int b = a+1; b < 5; b++) {
+				
+				if(str[a] > str[b]) {
+					int temp = str[b];
+					str[b] = str[a];
+					str[a] = temp;
+					
+				}if(str[a] < str[b]) {
+					int temp = str[a];
+					str[a] = str[b];
+					str[b] = temp;
+				}
+			}
+		}
+		for(int n : str) {
+			System.out.print(n+" ");
+		}
+		
+		
 	}
 
 }
