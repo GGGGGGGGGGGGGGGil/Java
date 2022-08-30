@@ -41,7 +41,11 @@ public class Pratice {
 		
 		System.out.println("scores의 합 : "+total);
 		
+		int arr[] = {1, 2, 3, 4, 5};
 		
+		for(int i=0; i<arr.length; i++) {
+			System.out.println("arr의 배열 길이 : "+arr.length);
+		}
 		
 	}
 
