@@ -6,6 +6,8 @@ public class Animal {
 		System.out.println("Animal move...");
 	}
 	
-	public void hunt() {}
+	public void hunt() {
+		System.out.println("Hunt");
+	}
 
 }
