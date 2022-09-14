@@ -14,7 +14,7 @@ import java.util.Properties;
 public class PropertiesTest {
 	public static void main(String[] args) {
 		
-		//프로퍼티 생성
+		//프로퍼티 생성 - map과 방식이 같지만 문자열로 사용
 		Properties prop = new Properties();
 		prop.setProperty("A", "Apple");
 		prop.setProperty("B", "Banana");

@@ -1,43 +1,52 @@
 package sub4;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.util.Properties;
 
 public class AA {
 	public static void main(String[] args) {
 		
-		//DB정보
-		String host = "jdbc:mysql://127.0.0.1:3306/java1db";
-		String user = "root";
-		String pass = "1234";
+		//프로퍼티 생성
+		Properties prop = new Properties();
+		prop.setProperty("A", "Apple");
+		prop.setProperty("B", "Banana");
+		prop.setProperty("C", "Cherry");
 		
+		System.out.println(prop);
+		
+		String path = "C:\\Users\\java1\\Desktop\\Fruit.properties";
+		
+		//프로퍼티 파일 생성
 		try {
+			FileOutputStream fos = new FileOutputStream(path);
+			prop.store(fos, null);
 			
-		//1단계
-		Class.forName("com.mysql.cj.jdbc.Driver");
-		//2단계
-		Connection conn = DriverManager.getConnection(host, user, pass);
-		//3단계
-		String sql = "INSERT INTO `User1` VALUES (?,?,?,?);";
-		PreparedStatement psmt = conn.prepareStatement(sql);
-		psmt.setString(1, "a210");
-		psmt.setString(2, "홍길동");
-		psmt.setString(3, "010-1110-2221");
-		psmt.setInt(4, 27);
-		//4단계
-		psmt.executeUpdate();
-		//5단계
-		//6단계
-		psmt.close();
-		conn.close();
-			
-		}catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		System.out.println("Insert 완료...");
+		System.out.println("프로퍼티 파일 생성완료...");
 		
+		//프로퍼티 객체 생성(파일로 부터)
+		String target = "C:\\Users\\java1\\Desktop\\Cities.properties";
+		Properties propCities = new Properties();
+		
+		try {
+			FileInputStream fis = new FileInputStream(target);
+			propCities.load(fis);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println(propCities);
+		System.out.println(propCities.getProperty("kor"));
+		System.out.println(propCities.getProperty("jpn"));
+		System.out.println(propCities.getProperty("usa"));
+		
+		System.out.println("프로퍼티 객체 생성완료...");
 	}
 
 }
