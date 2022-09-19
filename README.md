@@ -54,13 +54,19 @@
  - sub5.자료구조 Map
 
 ## Ch10.입출력 스트림
- - sub1.파일&문자 입출력 스트림
+ - sub1.파일 & 문자 입출력 스트림
  - sub2.보조 스트림
- - sub3.직렬화/역직렬화
+ - sub3.직렬화 / 역직렬화
 
 ## Ch11.JDBC 프로그래밍
  - sub1.JDBC
  - sub2.JDBC SQL INSERT, UPDATE, DELETE
  - sub3.JDBC SQL SELECT
  - sub4.JDBC PreparedStatement
+ - sub5.Transaction
+
+## Ch12.Thread
+ - sub1.Thread & Asyncronize
+ - sub2.Thread Join & synchronized
+ - sub3.Thread Add & Runnable
 # Java
