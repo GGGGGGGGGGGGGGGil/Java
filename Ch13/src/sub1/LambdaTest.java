@@ -19,13 +19,13 @@ public class LambdaTest {
 		}; //람다식은 변수 생략o
 		
 		Type3 t3 = (x, y) -> {
-			return x + y;
+			return x + y; 
 		};
 		
 		//람다식 호출
 		t1.f();
 		t2.f(3);
-		int result = t3.f(2, 3);
+		int result = t3.f(2, 3); //t3 리턴값 있어서
 		
 		System.out.println("result : " + result);
 		
