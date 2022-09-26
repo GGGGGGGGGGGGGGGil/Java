@@ -71,7 +71,14 @@ public class Test06 {
 			Apple apple = (Apple) fruit;
 			apple.show();
 			
-		}else if(fruit instanceof )
+		}else if(fruit instanceof Banana) {
+			Banana banana = (Banana) fruit;
+			banana.show();
+			
+		}else if(fruit instanceof Grape) {
+			Grape grape = (Grape) fruit;
+			grape.show();
+		}
 	}
 
 }
